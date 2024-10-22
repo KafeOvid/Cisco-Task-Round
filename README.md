@@ -23,8 +23,8 @@ Welcome to the Cisco Task Round repository! This project showcases the developme
 
 This project utilizes the following technologies:
 
-- **Frontend**: React, CSS
-- **Backend**: Node.js, Express
+- **Frontend**: HTML, CSS, JavaScript, React
+- **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Version Control**: Git, GitHub
 
