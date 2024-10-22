@@ -1,6 +1,4 @@
-Here’s a sample `README.md` file for your GitHub repository, tailored for the Cisco Task Round project. You can customize it further based on specific details about your project.
 
-```markdown
 # Cisco Task Round
 
 Welcome to the Cisco Task Round repository! This project showcases the development of a web application that aims to [briefly describe the purpose of your application, e.g., "facilitate communication and collaboration within teams."].
