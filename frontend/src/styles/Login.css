@@ -1,0 +1,158 @@
+/* Login.css */
+
+/* General Container Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.login-input-group {
+    margin-bottom: 20px;
+}
+
+.login-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-input-group input:focus {
+    border-color: #6C63FF;
+    outline: none;
+}
+
+/* Button Styling */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6C63FF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #5147D9;
+    transform: translateY(-3px);
+}
+
+/* Error & Success Message Styling */
+.login-error-message,
+.login-success-message {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-error-message {
+    color: #FF6584;
+}
+
+.login-success-message {
+    color: #4CAF50;
+}
+
+/* Link to Sign Up */
+.login-signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-signup-link a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+.login-signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .login-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-error-message,
+    .login-success-message {
+        font-size: 14px;
+    }
+}
+
+/* Larger Screen Adjustments */
+@media (min-width: 1200px) {
+    .login-form {
+        max-width: 500px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .login-input-group input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .login-btn {
+        padding: 15px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,166 @@
+/* General Container Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+}
+
+/* Signup Form Styling */
+.signup-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #6C63FF;
+    outline: none;
+}
+
+/* Button Styling */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6C63FF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #5147D9;
+    transform: translateY(-3px);
+}
+
+/* Error & Success Message Styling */
+.error-message,
+.success-message {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #FF6584;
+}
+
+.success-message {
+    color: #4CAF50;
+}
+
+/* Link to Login */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+    .signup-form {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .signup-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .error-message,
+    .success-message {
+        font-size: 14px;
+    }
+}
+
+/* Larger Screen Adjustments */
+@media (min-width: 1200px) {
+    .signup-form {
+        max-width: 500px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .input-group input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .signup-btn {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
